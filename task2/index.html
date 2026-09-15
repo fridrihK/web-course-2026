@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Груминг кошек и собак — ПЕС и КО</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Шапка страницы -->
+  <header class="header">
+    <div class="header-container">
+      <div class="logo">ПЕС и КО</div>
+      
+      <!-- CSS-гамбургер без JS (через checkbox) -->
+      <input type="checkbox" id="burger-toggle" class="burger-toggle">
+      <label for="burger-toggle" class="burger-icon" aria-label="Открыть меню">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <nav class="nav">
+        <a href="#services">Услуги</a>
+        <a href="#masters">Мастера</a>
+        <a href="#about">О салоне</a>
+        <a href="#reviews">Отзывы</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+
+      <a href="tel:+375999999999" class="phone">+375 (99) 999-99-99</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Герой-секция -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Груминг кошек и собак</h1>
+        <p class="hero-subtitle">Заботимся о вашем питомце как о своем</p>
+        
+        <div class="stats">
+          <div class="stat-item">
+            <span class="stat-num">6</span>
+            <span class="stat-desc">лет нашей студии</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">4</span>
+            <span class="stat-desc">грумера в команде</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">2000</span>
+            <span class="stat-desc">довольных клиентов</span>
+          </div>
+        </div>
+
+        <a href="#contact-form" class="btn btn-primary">Записаться онлайн &rarr;</a>
+      </div>
+
+      <div class="hero-image">
+        <img src="photo_1.jpg" alt="Собака 1">
+      </div>
+    </section>
+
+    <!-- Секция Услуг -->
+    <section class="services" id="services">
+      <div class="services-header">
+        <h2>Приведем в порядок вашего питомца</h2>
+        <a href="#all-services" class="link-more">Посмотреть все услуги &rarr;</a>
+      </div>
+
+      <div class="services-grid">
+        <article class="service-card">
+          <div class="card-info">
+            <h3>Уход за кожей и шерстью</h3>
+            <p>Время: 30 мин</p>
+            <p class="price">Цена от 30 руб</p>
+          </div>
+          <img src="photo_2.jpg" alt="Кот">
+          <button class="card-btn" aria-label="Заказать">&rarr;</button>
+        </article>
+
+        <article class="service-card card-orange">
+          <div class="card-info">
+            <h3>Маникюр и уход за лапами</h3>
+            <p>Время: 20 мин</p>
+            <p class="price">Цена от 20 руб</p>
+          </div>
+          <img src="photo_3.jpg" alt="Собака">
+          <button class="card-btn btn-white" aria-label="Заказать">&rarr;</button>
+        </article>
+
+        <article class="service-card">
+          <div class="card-info">
+            <h3>Стильная стрижка собаки</h3>
+            <p>Время: 30 мин</p>
+            <p class="price">Цена от 30 руб</p>
+          </div>
+          <img src="photo_4.jpg" alt="Собака 2">
+          <button class="card-btn" aria-label="Заказать">&rarr;</button>
+        </article>
+
+        <article class="service-card">
+          <div class="card-info">
+            <h3>Очищение ушей и глаз</h3>
+            <p>Время: 15 мин</p>
+            <p class="price">Цена от 10 руб</p>
+          </div>
+          <img src="photo_5.jpg" alt="Собака">
+          <button class="card-btn" aria-label="Заказать">&rarr;</button>
+        </article>
+      </div>
+    </section>
+
+    <!-- Секция Преимуществ -->
+    <section class="features" id="about">
+      <h2>Доверие и забота с первой встречи</h2>
+      
+      <div class="features-grid">
+        <div class="feature-card">
+          <h3>Фиксированные цены</h3>
+          <p>Мы подробно обсудим с вами процесс и стоимость услуг</p>
+        </div>
+        <div class="feature-card">
+          <h3>Сертифицированные грумеры</h3>
+          <p>Команда грумеров постоянно повышает квалификацию</p>
+        </div>
+        <div class="feature-card">
+          <h3>Забота с первой встречи</h3>
+          <p>Учитываем ваши предпочтения и достигаем наилучших результатов</p>
+        </div>
+        <div class="feature-card">
+          <h3>Стерильные инструменты</h3>
+          <p>Соблюдаем высокие стандарты гигиены и безопасности</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Форма обратной связи (Требование №5) -->
+    <section class="contact-form-section" id="contact-form">
+      <h2>Записаться на прием</h2>
+      <form class="contact-form" onsubmit="return false;">
+        <div class="form-group">
+          <label for="name">Имя</label>
+          <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Сообщение</label>
+          <textarea id="message" name="message" rows="4" placeholder="Укажите породу питомца и желаемую услугу" required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-submit">Отправить</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 ПЕС и КО. Все права защищены.</p>
+  </footer>
+
+</body>
+</html>
