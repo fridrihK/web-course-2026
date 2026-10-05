@@ -62,9 +62,7 @@ function toggleTodo(id) {
 
 
 function deleteTodo(id) {
-    todos = todos.filter(function (todo) {
-        return todo.id !== id;
-    });
+    todos = todos.filter(todo => todo.id !== id);
     render();
 }
 
@@ -103,8 +101,10 @@ function render() {
         span.className = 'todo-text';
         span.textContent = todo.text;
 
+
         contentDiv.appendChild(checkbox);
         contentDiv.appendChild(span);
+        
 
         const deleteBtn = document.createElement('button');
         deleteBtn.className = 'delete-btn';
