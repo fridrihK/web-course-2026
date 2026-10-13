@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon Says</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="game">
+        <header class="game__header">
+            <h1>Simon Says</h1>
+            <p class="game__level">Уровень: <span id="level">0</span></p>
+        </header>
+
+        <section class="board" id="board">
+            <button class="sector sector--0" data-index="0"></button>
+            <button class="sector sector--1" data-index="1"></button>
+            <button class="sector sector--2" data-index="2"></button>
+            <button class="sector sector--3" data-index="3"></button>
+        </section>
+
+        <p class="game__message" id="message">Нажмите «Старт»</p>
+
+        <button class="game__start" id="start-btn">Старт</button>
+    </main>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
